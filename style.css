@@ -9,15 +9,14 @@ body{
     /* padding-left: 780px; */
     justify-content: space-between;
     display: flex;
-    display: flex;
     align-items: center;
     padding: 25px 7%;
     background-color: #f8f4ed;
 }
 .nav-links a:hover{
-    /* border-bottom: 4px solid red; */
     color: #9a7951;
 }
+
 nav h2{
     margin: 0;
     font-family: Georgia, serif;
@@ -147,9 +146,65 @@ button:hover{
         flex-wrap: wrap;
         gap: 20px;
         justify-content: center;
+        /* width: 50%; */
+        /* height: 40%; */
     }
     .fraiselle{
-        width: 300px;
+        width: 180px;
+        height: 170px;
+    }
+    .gym{
+        width: 200px;
+        height: 170px;
+    }
+    .shirt{
+        width: 180px;
+        height: 170px;
+    }
+    .men{
+        width: 150px;
+        height: 170px;
+    }
+    .kids{
+        width: 150px;
+        background-color: white;
+        height: 170px;
+    }
+    .oil{
+        width: 170px;
+        height: 170px;
+
+    }
+    .gown{
+        width: 170px;
+        height: 170px;
+
+    }
+    .bag{
+        width: 150px;
+        height: 170px;
+
+    }
+    .sho{
+        width: 150px;
+        height: 170px;
+
+    }
+    .jog{
+        width: 150px;
+        height: 170px;
+    }
+    .fem{
+        width: 150px;
+        height: 170px;
+    }
+    .sneak{
+        width: 150px;
+        height: 170px;
+    }
+    .top{
+        width: 150px;
+        height: 170px;
     }
     .why-container{
         display: flex;
@@ -230,3 +285,157 @@ button:hover{
     .shop-btn:hover{
          background-color: #80613f;
     }
+    /* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+
+    /* General layout */
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        margin: 0;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    /* Navigation */
+    .nav-links {
+        padding: 18px 5%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav a {
+        margin-left: 8px;
+        font-size: 13px;
+    }
+
+    /* Hero section */
+    .hero {
+        width: 100%;
+        padding: 0 5%;
+        position: relative;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 420px;
+        margin-left: 0;
+        object-fit: cover;
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: clamp(26px, 7vw, 40px);
+        line-height: 1.1;
+    }
+
+    .web {
+        left: 5%;
+        right: 5%;
+        max-width: 90%;
+    }
+
+    .stay {
+        font-size: clamp(32px, 10vw, 55px);
+        overflow-wrap: anywhere;
+    }
+
+    /* Categories */
+    .categories {
+        padding: 45px 5%;
+    }
+
+    .categories h2 {
+        font-size: 28px;
+    }
+
+    .category-container {
+        gap: 15px;
+    }
+
+    .category-card {
+        width: calc(50% - 10px);
+        height: auto;
+    }
+
+    .category-card img {
+        height: 170px;
+    }
+
+    /* Shop collections */
+    .pieces {
+        margin: 15px 5%;
+        gap: 10px;
+    }
+
+    .dress {
+        gap: 12px;
+    }
+
+    .dress img {
+        max-width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    /* Why shop with us */
+    .why-container {
+        gap: 18px;
+        padding: 0 5%;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+        padding: 22px;
+    }
+
+    .we {
+        margin-left: 0;
+    }
+
+    /* Collection cards */
+    .collection-container {
+        gap: 15px;
+        padding: 0 5%;
+    }
+
+    .collection-card {
+        width: calc(50% - 10px);
+        min-width: 0;
+    }
+
+    .collection-card img {
+        height: 170px;
+        object-fit: cover;
+    }
+
+    /* Forms and sign-up section */
+    .sign,
+    .find {
+        padding: 45px 5%;
+    }
+
+    .form {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    input,
+    textarea,
+    select {
+        max-width: 100%;
+    }
+
+    /* Footer */
+    footer {
+        padding: 40px 5%;
+        overflow-wrap: anywhere;
+    }
+
+}
